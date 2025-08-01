@@ -10,3 +10,4 @@ jobs:
       clipboard: '["mac"]'
       kconfig: '["CONFIG_ZMK_POINTING=y"]'
       nav: '["vi"]'
+      branches: '["zmkfirmware/zmk/main"]'
