@@ -8,3 +8,5 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["corne_left","corne_right"]'
       clipboard: '["mac"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y"]'
+      nav: '["vi"]'
