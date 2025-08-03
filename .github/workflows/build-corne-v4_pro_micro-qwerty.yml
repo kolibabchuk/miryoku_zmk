@@ -8,6 +8,5 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["corne_left","corne_right"]'
       clipboard: '["mac"]'
-      kconfig: '["CONFIG_ZMK_POINTING=y"]'
-      nav: '["vi"]'
-      branches: '["zmkfirmware/zmk/main"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=16"]'
+      nav: '["invertedt"]'
