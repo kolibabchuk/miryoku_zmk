@@ -1,4 +1,4 @@
-name: 'Build Corne V4 Pro Micro: Qwerty'
+name: 'Build Corne V4 Pro Micro: ENDGAME'
 on: workflow_dispatch
 jobs:
   build:
