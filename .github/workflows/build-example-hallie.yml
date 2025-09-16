@@ -8,4 +8,6 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
+
       board: '["hallie_left","hallie_right"]'
+      branches: '["SplittedSpace/zmk-firmware/main"]'
