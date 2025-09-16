@@ -1,0 +1,4 @@
+outboard_repository=SplittedSpace/zmk-firmware
+outboard_ref=main
+outboard_from=app/boards/arm/hallie
+outboard_to=boards/arm/hallie
