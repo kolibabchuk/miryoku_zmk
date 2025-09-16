@@ -3,3 +3,4 @@ outboard_ref=main
 outboard_from=app/boards/arm/hallie
 outboard_to=boards/arm/hallie
 outboard_branches=SplittedSpace/zmk-firmware/main
+outboard_modules=SplittedSpace/zmk-firmware/main
