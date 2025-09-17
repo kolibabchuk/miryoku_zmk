@@ -8,8 +8,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["nice_nano_v2"]'
-      shield: '["hallie_left","hallie_right"]'
+      board: '["hallie_left","hallie_right"]'
       clipboard: '["mac"]'
       kconfig: '["CONFIG_ZMK_POINTING=y"]'
       nav: '["invertedt"]'
