@@ -10,6 +10,6 @@ jobs:
     with:
       board: '["hallie_left","hallie_right"]'
       clipboard: '["mac"]'
-      kconfig: '["CONFIG_ZMK_STUDIO=n\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=Dalek"]'
+      kconfig: '["CONFIG_ZMK_STUDIO=n\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=\"Dalek\""]'
       nav: '["invertedt"]'
       branches: '["kolibabchuk/zmk-firmware/main"]'
