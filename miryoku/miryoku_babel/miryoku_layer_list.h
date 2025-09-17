@@ -7,16 +7,16 @@
 #if !defined (MIRYOKU_LAYER_LIST)
 
 #define MIRYOKU_LAYER_LIST \
-MIRYOKU_X(BASE,   "Base",   sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
-MIRYOKU_X(EXTRA,  "Extra",  sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp DOWN UP> ;) \
-MIRYOKU_X(TAP,    "Tap",    sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
-MIRYOKU_X(BUTTON, "Button", sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
-MIRYOKU_X(NAV,    "Nav",    sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN> ;) \
-MIRYOKU_X(MOUSE,  "Mouse",  sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
-MIRYOKU_X(MEDIA,  "Media",  sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_DEC &inc_dec_kp C_VOL_UP C_VOL_DN> ;) \
-MIRYOKU_X(NUM,    "Num",    sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
-MIRYOKU_X(SYM,    "Sym",    sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
-MIRYOKU_X(FUN,    "Fun",    sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN &inc_dec_kp SCRL_LEFT SCRL_RIGHT> ;)
+MIRYOKU_X(BASE,   "Base",   sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(EXTRA,  "Extra",  sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(TAP,    "Tap",    sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(BUTTON, "Button", sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(NAV,    "Nav",    sensor-bindings = < &inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT> ;) \
+MIRYOKU_X(MOUSE,  "Mouse",  sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(MEDIA,  "Media",  sensor-bindings = <&inc_dec_kp C_BRI_DEC C_BRI_INC &inc_dec_kp C_VOL_UP C_VOL_DN> ;) \
+MIRYOKU_X(NUM,    "Num",    sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(SYM,    "Sym",    sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;) \
+MIRYOKU_X(FUN,    "Fun",    sensor-bindings = < &inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN> ;)
 
 #define U_BASE   0
 #define U_EXTRA  1
