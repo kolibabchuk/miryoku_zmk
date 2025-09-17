@@ -8,5 +8,5 @@ U_MT(LGUI, A),     U_MT(LALT, S),     U_MT(LCTRL, D),    U_MT(LSHFT, F),    &kp 
 U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH), \
 U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
 
-// Override mapping for Extra layer only
-#define MIRYOKU_MAPPING_EXTRA MIRYOKU_LAYOUTMAPPING_HALLIE_EXTRA
+// Override layer mapping for Extra layer only  
+#define MIRYOKU_LAYERMAPPING_EXTRA MIRYOKU_LAYOUTMAPPING_HALLIE_EXTRA
