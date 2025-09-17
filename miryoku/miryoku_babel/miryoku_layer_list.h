@@ -10,11 +10,11 @@
 MIRYOKU_X(BASE,   "Base",   sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
 MIRYOKU_X(EXTRA,  "Extra",  sensor-bindings = < &inc_dec_kp RIGHT LEFT &inc_dec_kp UP DOWN> ;) \
 MIRYOKU_X(TAP,    "Tap",    ) \
-MIRYOKU_X(BUTTON, "Button", sensor-bindings = <&inc_dec_kp &msc SCRL_UP &msc SCRL_DOWN &inc_dec_kp &msc SCRL_LEFT &msc SCRL_RIGHT> ;) \
+MIRYOKU_X(BUTTON, "Button", sensor-bindings = <&inc_dec_kp U_WH_U U_WH_D &inc_dec_kp U_WH_U U_WH_D> ;) \
 MIRYOKU_X(NAV,    "Nav",    sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN> ;) \
-MIRYOKU_X(MOUSE,  "Mouse",  sensor-bindings = <&inc_dec_kp &msc SCRL_DOWN &msc SCRL_UP &inc_dec_kp &msc SCRL_LEFT &msc SCRL_RIGHT> ;) \
+MIRYOKU_X(MOUSE,  "Mouse",  sensor-bindings = <&inc_dec_kp U_WH_D U_WH_D &inc_dec_kp U_WH_L U_WH_R> ;) \
 MIRYOKU_X(MEDIA,  "Media",  sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_DEC &inc_dec_kp C_VOL_UP C_VOL_DN> ;) \
-MIRYOKU_X(NUM,    "Num",    sensor-bindings = <&inc_dec_kp &msc SCRL_DOWN &msc SCRL_UP &inc_dec_kp &msc SCRL_LEFT &msc SCRL_RIGHT> ;) \
+MIRYOKU_X(NUM,    "Num",    sensor-bindings = <&inc_dec_kp U_WH_D U_WH_D &inc_dec_kp U_WH_R U_WH_L> ;) \
 MIRYOKU_X(SYM,    "Sym",    ) \
 MIRYOKU_X(FUN,    "Fun",    )
 
