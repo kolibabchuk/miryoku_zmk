@@ -16,10 +16,11 @@
 / {
   keymap {
     compatible = "zmk,keymap";
-#define MIRYOKU_X(LAYER, STRING) \
-    LAYER { \
-      display-name = STRING; \
+#define MIRYOKU_X(LAYER, STRING, EXTRA) \
+    U_##LAYER## { \
+      label = STRING; \
       bindings = < U_MACRO_VA_ARGS(MIRYOKU_LAYERMAPPING_##LAYER, MIRYOKU_LAYER_##LAYER) >; \
+      EXTRA \
     };
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
@@ -30,7 +31,11 @@ MIRYOKU_LAYER_LIST
 
 #include "miryoku_double_tap_guard.dtsi"
 
-#include "miryoku_mousekeys.dtsi"
+#if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
+  #include "miryoku_kludge_mousekeyspr.dtsi"
+#else
+  #include "miryoku_mousekeys.dtsi"
+#endif
 
 #if defined (MIRYOKU_KLUDGE_THUMBCOMBOS)
   #include "miryoku_kludge_thumbcombos.dtsi"
