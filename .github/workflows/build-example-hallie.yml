@@ -11,4 +11,4 @@ jobs:
       board: '["hallie_left","hallie_right"]'
       clipboard: '["mac"]'
       nav: '["invertedt"]'
-      branches: '["SplittedSpace/zmk-firmware/main"]'
+      branches: '["kolibabchuk/zmk-firmware/main"]'
