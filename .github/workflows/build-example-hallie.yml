@@ -10,5 +10,6 @@ jobs:
     with:
       board: '["hallie_left","hallie_right"]'
       clipboard: '["mac"]'
+      kconfig: '["CONFIG_ZMK_STUDIO=n"]'
       nav: '["invertedt"]'
       branches: '["kolibabchuk/zmk-firmware/main"]'
