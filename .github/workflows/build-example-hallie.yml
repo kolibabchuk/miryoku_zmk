@@ -10,6 +10,6 @@ jobs:
     with:
       board: '["hallie_left","hallie_right"]'
       clipboard: '["mac"]'
-      kconfig: '["CONFIG_ZMK_STUDIO=n\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=Dalek\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000"]'
+      kconfig: '["CONFIG_ZMK_STUDIO=n\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_KEYBOARD_NAME=\"Dalek\"\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000"]'
       nav: '["invertedt"]'
       branches: '["kolibabchuk/zmk-firmware/main"]'
