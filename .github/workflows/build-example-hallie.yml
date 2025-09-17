@@ -12,4 +12,4 @@ jobs:
       clipboard: '["mac"]'
       kconfig: '["CONFIG_ZMK_POINTING=y"]'
       nav: '["invertedt"]'
-      branches: '["SplittedSpace/zmk-firmware/main","zmkfirmware/zmk/main SplittedSpace/zmk-firmware/main"]'
+      branches: '["SplittedSpace/zmk-firmware/main zmkfirmware/zmk/main"]'
