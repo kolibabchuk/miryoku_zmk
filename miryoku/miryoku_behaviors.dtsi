@@ -17,5 +17,11 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    td_bslh_esc: tap_dance_bslh_esc {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp BSLH>, <&kp ESC>;
+    };
   };
 };
