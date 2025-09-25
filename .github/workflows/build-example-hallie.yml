@@ -9,6 +9,7 @@ jobs:
     secrets: inherit
     with:
       board: '["hallie_left","hallie_right"]'
+      extra: '["colemak"]'
       clipboard: '["mac"]'
       kconfig: '["CONFIG_ZMK_STUDIO=n\nCONFIG_ZMK_POINTING=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000"]'
       nav: '["invertedt"]'
