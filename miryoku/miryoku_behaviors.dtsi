@@ -17,83 +17,41 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
-    mt_rbkt_lgui: mt_rbkt_lgui {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp LGUI &kp RBKT>;
-    };
     td_rbkt_esc: td_rbkt_esc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mt_rbkt_lgui &kp ESC>;
-    };
-    mt_lbkt_rgui: mt_lbkt_rgui {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp RGUI &kp LBKT>;
+      bindings = <&mt LGUI RBKT>, <&kp ESC>;
     };
     td_lbkt_esc: td_lbkt_esc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mt_lbkt_rgui &kp ESC>;
-    };
-    mt_bslh_lshift: mt_bslh_lshift {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp LSHFT &kp BSLH>;
+      bindings = <&mt RGUI LBKT>, <&kp ESC>;
     };
     td_bslh_caps: td_bslh_caps {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mt_bslh_lshift &kp CAPS>;
-    };
-    mt_sqt_rshift: mt_sqt_rshift {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp RSHFT &kp SQT>;
+      bindings = <&mt LSHFT BSLH>, <&kp CAPS>;
     };
     td_sqt_caps: td_sqt_caps {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mt_sqt_rshift &kp CAPS>;
-    };
-    mt_fslh_lalt: mt_fslh_lalt {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp LALT &kp FSLH>;
+      bindings = <&mt RSHFT SQT>, <&kp CAPS>;
     };
     td_fslh_qmark: td_fslh_qmark {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mt_fslh_lalt &kp QMARK>;
-    };
-    mt_minus_ralt: mt_minus_ralt {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&kp RALT &kp MINUS>;
+      bindings = <&mt LALT FSLH>, <&kp QMARK>;
     };
     td_minus_excl: td_minus_excl {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mt_minus_ralt &kp EXCL>;
+      bindings = <&mt RALT MINUS>, <&kp EXCL>;
     };
   };
 };
