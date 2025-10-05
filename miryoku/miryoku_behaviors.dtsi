@@ -3,11 +3,6 @@
 
 / {
   macros {
-    comma_macro: comma_macro {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&kp KP_DOT>;
-    };
     dot_macro: dot_macro {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
@@ -45,7 +40,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LSHFT RBKT>, <&comma_macro>;
+      bindings = <&u_mt LSHFT RBKT>, <&dot_macro>;
     };
     td_sqt_caps: td_sqt_caps {
       compatible = "zmk,behavior-tap-dance";
