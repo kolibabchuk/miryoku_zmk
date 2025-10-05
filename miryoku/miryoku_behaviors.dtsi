@@ -2,6 +2,18 @@
 // https://github.com/manna-harbour/miryoku
 
 / {
+  macros {
+    comma_macro: comma_macro {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp KP_COMMA>;
+    };
+    dot_macro: dot_macro {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp KP_DOT>;
+    };
+  };
   behaviors {
     u_mt: u_mt {
       compatible = "zmk,behavior-hold-tap";
@@ -33,13 +45,13 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LSHFT RBKT>, <&kp COMMA>;
+      bindings = <&u_mt LSHFT RBKT>, <&comma_macro>;
     };
     td_sqt_caps: td_sqt_caps {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt RSHFT SQT>, <&kp DOT>;
+      bindings = <&u_mt RSHFT SQT>, <&dot_macro>;
     };
     td_fslh_qmark: td_fslh_qmark {
       compatible = "zmk,behavior-tap-dance";
