@@ -33,13 +33,13 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LSHFT RBKT>, <&kp CAPS>;
+      bindings = <&u_mt LSHFT RBKT>, <&kp COMMA>;
     };
     td_sqt_caps: td_sqt_caps {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt RSHFT SQT>, <&kp CAPS>;
+      bindings = <&u_mt RSHFT SQT>, <&kp DOT>;
     };
     td_fslh_qmark: td_fslh_qmark {
       compatible = "zmk,behavior-tap-dance";
