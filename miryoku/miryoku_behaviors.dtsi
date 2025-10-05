@@ -1,23 +1,6 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-U_MACRO(m_rbkt, bindings = <&kp RBKT>;)
-U_MACRO(m_lbkt, bindings = <&kp LBKT>;)
-U_MACRO(m_bslh, bindings = <&kp BSLH>;)
-U_MACRO(m_sqt, bindings = <&kp SQT>;)
-U_MACRO(m_fslh, bindings = <&kp FSLH>;)
-U_MACRO(m_minus, bindings = <&kp MINUS>;)
-U_MACRO(m_esc, bindings = <&kp ESC>;)
-U_MACRO(m_caps, bindings = <&kp CAPS>;)
-U_MACRO(m_qmark, bindings = <&kp QMARK>;)
-U_MACRO(m_excl, bindings = <&kp EXCL>;)
-U_MACRO(m_lgui, bindings = <&kp LGUI>;)
-U_MACRO(m_rgui, bindings = <&kp RGUI>;)
-U_MACRO(m_lshift, bindings = <&kp LSHFT>;)
-U_MACRO(m_rshift, bindings = <&kp RSHFT>;)
-U_MACRO(m_lalt, bindings = <&kp LALT>;)
-U_MACRO(m_ralt, bindings = <&kp RALT>;)
-
 / {
   behaviors {
     u_mt: u_mt {
@@ -38,79 +21,37 @@ U_MACRO(m_ralt, bindings = <&kp RALT>;)
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&m_rbkt>, <&m_esc>;
-    };
-    ht_rbkt_lgui: ht_rbkt_lgui {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&m_lgui>, <&td_rbkt_esc>;
+      bindings = <&u_mt LGUI RBKT>, <&kp ESC>;
     };
     td_lbkt_esc: td_lbkt_esc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&m_lbkt>, <&m_esc>;
-    };
-    ht_lbkt_rgui: ht_lbkt_rgui {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&m_rgui>, <&td_lbkt_esc>;
+      bindings = <&u_mt RGUI LBKT>, <&kp ESC>;
     };
     td_bslh_caps: td_bslh_caps {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&m_bslh>, <&m_caps>;
-    };
-    ht_bslh_lshift: ht_bslh_lshift {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&m_lshift>, <&td_bslh_caps>;
+      bindings = <&u_mt LSHFT BSLH>, <&kp CAPS>;
     };
     td_sqt_caps: td_sqt_caps {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&m_sqt>, <&m_caps>;
-    };
-    ht_sqt_rshift: ht_sqt_rshift {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&m_rshift>, <&td_sqt_caps>;
+      bindings = <&u_mt RSHFT SQT>, <&kp CAPS>;
     };
     td_fslh_qmark: td_fslh_qmark {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&m_fslh>, <&m_qmark>;
-    };
-    ht_fslh_lalt: ht_fslh_lalt {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&m_lalt>, <&td_fslh_qmark>;
+      bindings = <&u_mt LALT FSLH>, <&kp QMARK>;
     };
     td_minus_excl: td_minus_excl {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&m_minus>, <&m_excl>;
-    };
-    ht_minus_ralt: ht_minus_ralt {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      flavor = "tap-preferred";
-      bindings = <&m_ralt>, <&td_minus_excl>;
+      bindings = <&u_mt RALT MINUS>, <&kp EXCL>;
     };
   };
 };
