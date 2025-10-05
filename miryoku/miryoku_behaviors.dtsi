@@ -6,12 +6,12 @@
     comma_macro: comma_macro {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_press &kp LSHFT>, <&macro_tap &kp COMMA>, <&macro_release &kp LSHFT>;
+      bindings = <&macro_press &kp LSHFT>, <&macro_tap &kp KP_COMMA>, <&macro_release &kp LSHFT>;
     };
     dot_macro: dot_macro {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp DOT>;
+      bindings = <&kp KP_DOT>;
     };
   };
   behaviors {
