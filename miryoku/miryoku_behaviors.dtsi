@@ -21,7 +21,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LGUI RBKT>, <&kp ESC>;
+      bindings = <&u_mt LGUI BSLH>, <&kp ESC>;
     };
     td_lbkt_esc: td_lbkt_esc {
       compatible = "zmk,behavior-tap-dance";
@@ -33,7 +33,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LSHFT BSLH>, <&kp CAPS>;
+      bindings = <&u_mt LSHFT RBKT>, <&kp CAPS>;
     };
     td_sqt_caps: td_sqt_caps {
       compatible = "zmk,behavior-tap-dance";
