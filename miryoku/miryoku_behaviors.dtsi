@@ -8,6 +8,11 @@
       #binding-cells = <0>;
       bindings = <&kp KP_DOT>;
     };
+    enter_macro: dot_macro {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp ENTER>;
+    };
   };
   behaviors {
     u_mt: u_mt {
@@ -24,7 +29,7 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
-    td_rbkt_esc: td_rbkt_esc {
+    td_bslh_esc: td_bslh_esc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
@@ -36,13 +41,13 @@
       tapping-term-ms = <200>;
       bindings = <&u_mt RGUI LBKT>, <&kp ESC>;
     };
-    td_bslh_caps: td_bslh_caps {
+    td_rbkt_enter: td_rbkt_enter {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LSHFT RBKT>, <&dot_macro>;
+      bindings = <&u_mt LG(LC(LA(LSHIFT))) RBKT>, <&enter_macro>;
     };
-    td_sqt_caps: td_sqt_caps {
+    td_sqt_dot: td_sqt_dot {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
