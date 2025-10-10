@@ -17,41 +17,5 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
-    td_bslh_esc: td_bslh_esc {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&u_mt LGUI BSLH>, <&kp ESC>;
-    };
-    td_lbkt_esc: td_lbkt_esc {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&u_mt RGUI LBKT>, <&kp ESC>;
-    };
-    td_rbkt_enter: td_rbkt_enter {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&u_mt LG(LC(LA(LSHIFT))) RBKT>, <&kp ENTER>;
-    };
-    td_sqt_dot: td_sqt_dot {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&u_mt RSHFT SQT>, <&kp KP_DOT>;
-    };
-    td_fslh_qmark: td_fslh_qmark {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&u_mt GLOBE QMARK>, <&kp FSLH>;
-    };
-    td_minus_excl: td_minus_excl {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&u_mt GLOBE EXCL>, <&kp MINUS>;
-    };
   };
 };
