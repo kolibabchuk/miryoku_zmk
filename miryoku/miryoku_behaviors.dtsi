@@ -45,13 +45,13 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt LALT QMARK>, <&kp FSLH>;
+      bindings = <&u_mt GLOBE QMARK>, <&kp FSLH>;
     };
     td_minus_excl: td_minus_excl {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&u_mt RALT EXCL>, <&kp MINUS>;
+      bindings = <&u_mt GLOBE EXCL>, <&kp MINUS>;
     };
   };
 };
