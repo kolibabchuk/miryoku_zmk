@@ -12,6 +12,6 @@ jobs:
       alphas: '["qwerty"]'
       extra: '["colemak"]'
       clipboard: '["mac"]'
-      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000"]'
+      kconfig: '["CONFIG_ZMK_STUDIO=n\CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000"]'
       nav: '["invertedt"]'
       branches: '["kolibabchuk/zmk-firmware/main"]'
