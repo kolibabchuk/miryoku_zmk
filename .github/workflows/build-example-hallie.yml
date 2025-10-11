@@ -12,6 +12,6 @@ jobs:
       alphas: '["qwerty"]'
       extra: '["colemak"]'
       clipboard: '["mac"]'
-      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000\nCONFIG_ZMK_KEYBOARD_NAME=\"TYTS-PYZDYTS\"\nCONFIG_USB_DEVICE_VID=0x05AC\nCONFIG_USB_DEVICE_PID=0x0267\nCONFIG_USB_DEVICE_MANUFACTURER=\"Apple Inc.\"\nCONFIG_ZMK_HID_CONSUMER_REPORT_USAGES_FULL=y\nCONFIG_ZMK_STUDIO=n"]'
+      kconfig: '["CONFIG_ZMK_POINTING=y\nCONFIG_ZMK_IDLE_SLEEP_TIMEOUT=3600000"]'
       nav: '["invertedt"]'
       branches: '["kolibabchuk/zmk-firmware/main"]'
