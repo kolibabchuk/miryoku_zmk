@@ -17,5 +17,11 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    td_bslh_globe_base: td_bslh_globe_base {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&u_mt GLOBE BSLH>, <&u_to_U_BASE>;
+    };
   };
 };
