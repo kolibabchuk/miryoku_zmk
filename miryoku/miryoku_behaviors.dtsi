@@ -21,7 +21,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      bindings = <&u_mt GLOBE BSLH>, <&u_to_U_BASE>;
+      bindings = <&u_mt GLOBE BSLH>, <&to 0>;
     };
   };
 };
