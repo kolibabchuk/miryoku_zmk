@@ -13,9 +13,9 @@
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&td_bslh_globe_base  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  U_MT(GLOBE, LBKT) \
+&td_bslh_globe_base  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  U_MT(RSHFT, LBKT) \
 U_MT(HYPR, RBKT)     K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  U_MT(HYPR, SQT) \
-U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RSHFT, ESC) \
+U_MT(GLOBE, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(GLOBE, ESC) \
                                K32  K33  K34    K35  K36  K37
 
 // BUTTON layer mapping with custom outer column keys
@@ -25,10 +25,10 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&bootloader K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &bootloader \
-&bootloader K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &bootloader \
-&bootloader K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &bootloader \
-                      K32  K33  K34    K35  K36  K37
+U_BOOT K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  U_BOOT \
+U_BOOT K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  U_BOOT \
+U_BOOT K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_BOOT \
+                 K32  K33  K34    K35  K36  K37
 
 // NAV layer mapping with custom outer column keys
 #define MIRYOKU_LAYOUTMAPPING_NAV( \
@@ -37,10 +37,10 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp GLOBE \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp ENTER \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp RSHFT \
-                     K32  K33  K34    K35  K36  K37
+&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC  \
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp C_AC_SEARCH                         K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
+                                                  K32  K33  K34    K35  K36  K37
 
 // MOUSE layer mapping with custom outer column keys
 #define MIRYOKU_LAYOUTMAPPING_MOUSE( \
@@ -49,10 +49,10 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp GLOBE \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp ENTER \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp RSHFT \
-                    K32  K33  K34    K35  K36  K37
+&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp C_AC_SEARCH                         K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
+                                                  K32  K33  K34    K35  K36  K37
 
 // MEDIA layer mapping with custom outer column keys
 #define MIRYOKU_LAYOUTMAPPING_MEDIA( \
@@ -61,10 +61,10 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT \
-                    K32  K33  K34    K35  K36  K37
+&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp C_AC_SEARCH                         K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
+                                                  K32  K33  K34    K35  K36  K37
 
 // NUM layer mapping with custom outer column keys
 #define MIRYOKU_LAYOUTMAPPING_NUM( \
@@ -73,9 +73,9 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp GLOBE \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp ENTER \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp RSHFT \
+&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
                     K32  K33  K34    K35  K36  K37
 
 // SYM layer mapping with custom outer column keys and unicode tilde/backtick
@@ -85,9 +85,9 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp GLOBE \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp ENTER \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp RSHFT \
+&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
                     K32  K33  K34    K35  K36  K37
 
 // FUN layer mapping with numbers 1-6 on outer columns
@@ -97,9 +97,9 @@ U_MT(LSHFT, ESC)     K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_MT(RS
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp GLOBE \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp ENTER \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp RSHFT \
+&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
                     K32  K33  K34    K35  K36  K37
 
 #endif
