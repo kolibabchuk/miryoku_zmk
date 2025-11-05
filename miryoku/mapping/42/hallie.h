@@ -73,10 +73,10 @@ U_BOOT K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_BOOT \
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
-                    K32  K33  K34    K35  K36  K37
+&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp C_AC_SEARCH                         K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
+                                                  K32  K33  K34    K35  K36  K37
 
 // SYM layer mapping with custom outer column keys and unicode tilde/backtick
 #define MIRYOKU_LAYOUTMAPPING_SYM( \
@@ -85,10 +85,10 @@ U_BOOT K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_BOOT \
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
-                    K32  K33  K34    K35  K36  K37
+&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp C_AC_SEARCH                         K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
+                                                  K32  K33  K34    K35  K36  K37
 
 // FUN layer mapping with numbers 1-6 on outer columns
 #define MIRYOKU_LAYOUTMAPPING_FUN( \
@@ -97,10 +97,10 @@ U_BOOT K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  U_BOOT \
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp ESC   K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
-&kp HYPR  K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
-&kp GLOBE K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
-                    K32  K33  K34    K35  K36  K37
+&kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  K00  K01  K02  K03  K04    K05  K06  K07  K08  K09  &kp ESC \
+&kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       K10  K11  K12  K13  K14    K15  K16  K17  K18  K19  &kp HYPR \
+&kp C_AC_SEARCH                         K20  K21  K22  K23  K24    K25  K26  K27  K28  K29  &kp GLOBE \
+                                                  K32  K33  K34    K35  K36  K37
 
 #endif
 
