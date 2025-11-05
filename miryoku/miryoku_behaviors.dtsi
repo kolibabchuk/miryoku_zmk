@@ -24,4 +24,13 @@
       bindings = <&u_mt GLOBE BSLH>, <&to 0>;
     };
   };
+  macros {
+    input_switch: input_switch {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <30>;
+      tap-ms = <40>;
+      bindings = <&kp LC(SPACE)>;
+    };
+  };
 };
