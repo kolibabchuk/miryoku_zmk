@@ -17,6 +17,13 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    mt_macro: mt_macro {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <1>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&input_switch>;
+    };
     td_bslh_globe_base: td_bslh_globe_base {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
@@ -30,7 +37,7 @@
       #binding-cells = <0>;
       wait-ms = <30>;
       tap-ms = <40>;
-      bindings = <&kp LC(SPACE)>;
+      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>;
     };
   };
 };
