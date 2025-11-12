@@ -17,30 +17,18 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    mt_input_switch: mt_input_switch {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&input_switch>;
+    };
     td_bslh_globe_base: td_bslh_globe_base {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <U_TAPPING_TERM>;
       bindings = <&u_mt GLOBE BSLH>, <&to 0>;
-    };
-    td_extra_base: td_extra_base {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <U_TAPPING_TERM>;
-      bindings = <&u_to_U_EXTRA>, <&u_to_U_BASE>;
-    };
-    td_input_switch_layers: td_input_switch_layers {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <U_TAPPING_TERM>;
-      bindings = <&input_switch_to_extra>, <&input_switch_to_base>;
-    };
-    mt_macro: mt_macro {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
-      bindings = <&kp>, <&td_input_switch_layers>;
     };
   };
   macros {
@@ -50,20 +38,6 @@
       wait-ms = <30>;
       tap-ms = <40>;
       bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>;
-    };
-    input_switch_to_extra: input_switch_to_extra {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      wait-ms = <30>;
-      tap-ms = <40>;
-      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&u_to_U_EXTRA>;
-    };
-    input_switch_to_base: input_switch_to_base {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      wait-ms = <30>;
-      tap-ms = <40>;
-      bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&u_to_U_BASE>;
     };
   };
 };
